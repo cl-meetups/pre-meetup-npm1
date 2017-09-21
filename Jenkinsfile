@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:6.11.2-stretch'
+      args '-u 0'
     }
     
   }
